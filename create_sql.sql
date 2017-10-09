@@ -1,0 +1,3 @@
+CREATE DATABASE `netease`;
+CREATE TABLE `netease`.`love_song` ( `id` INT(20) PRIMARY KEY NOT NULL AUTO_INCREMENT, `user_id` VARCHAR(20) NOT NULL , `song_id` VARCHAR(20) NOT NULL, `song_name` TEXT NOT NULL) ENGINE = MyISAM;
+CREATE TABLE `netease`.`user_comment` ( `id` INT(30) PRIMARY KEY NOT NULL AUTO_INCREMENT, `user_id` VARCHAR(20) NOT NULL , `user_name` TEXT NOT NULL , `song_id` VARCHAR(20) NOT NULL, `song_name` TEXT NOT NULL, `comment` TEXT NOT NULL, `time` TEXT NOT NULL) ENGINE = MyISAM;
